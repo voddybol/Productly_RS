@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.header-btn {
+  display: flex;
+}
+
+.sign-in,
+.sign-up {
+  padding: 13px 20px;
+  margin-left: 15px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1 1 50%;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-btn {
+  display: flex;
+}
+
+.hero-heading {
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  margin-bottom: 60px;
+}
+
+.get-started-btn,
+.watch-video-btn {
+  padding: 13px 20px;
+}
+
+.services-container {
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-heading {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+}
+
+.services-img {
+  width: 50px;
+  height: 50px;
+}
+
+.services-list {
+  display: flex;
+  margin-top: 70px;
+}
+
+.services-item {
+  max-width: 300px;
+}
+
+.services-btn {
+  margin: 0 auto;
+  padding: 15px 30px;
+}
+
+.strat_radio_btn {
+	display: inline-block;
+	margin-right: 10px;
+}
+.strat_radio_btn input[type=radio] {
+	display: none;
+}
+.strat_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+  border: 1px solid #D7D7D7;
+	border-radius: 90px;
+	user-select: none;
+}
+
+.strat-container {
+  margin-bottom: 50px;
+}
+
+.strat_radio_btn input[type=radio]:checked + label {
+	background: #FF9900;
+  color: #fff;
+}
+ 
+.strat_radio_btn label:hover {
+	color: #666;
+}
+
+.strat_radio_btn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+
+.strat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.strat-item {
+  width: 366px;
+  height: 377px;
+}
+
+.strat-item:not(:nth-child(3)) {
+  margin-right: 35px;
+  margin-bottom: 30px;
+}
+
+.strat-item:nth-child(4) {
+  flex: 1 0 33.33%;
+  margin-right: 35px;
+}
+
+.strat-item:nth-child(5) {
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.strat-item:nth-child(8) {
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.clients {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.client1,
+.client2 {
+  margin-right: 55px;
+}
+
+.client1,
+.client2,
+.client3 {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  padding: 30px 0px 30px 30px;
+  flex: 0 0 5%;
+}
+
+.client-img {
+  position: relative;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  background-size: 100%;
+}
+
+.section-contacts {
+  background-color: #FFEEE1;
+  margin-bottom: 60px;
+}
+
+
+.contact-container {
+  background-color: #FFEEE1;
+  padding-top: 62px;
+  padding-bottom: 90px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon1,
+.icon2 {
+  display: flex;
+  align-items: center;
+}
+
+.ico-phone,
+.ico-mail {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.form-name,
+.form-mail {
+  height: 45px;
+  width: 280px;
+  margin-left: 15px;
+  margin-top: 15px;
+  flex: 1 1 100%;
+  border: none;
+}
+
+.form-ask {
+  height: 159px;
+  width: 575px;
+  margin: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+.form-list-top {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-submit {
+  margin-left: 15px;
+  margin-right: auto;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FF9900;
+  color: #fff;
+  cursor: pointer;
+}
