@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,6 +13,7 @@ img {
 
 body {
   font-family: 'Poppins';
+  background: #fff;
 }
 
 a {
@@ -51,10 +53,20 @@ ul, li {
 .header-list {
   display: flex;
   align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .header-item-link {
-color: #2F281E
+color: #2F281E;
+transition: 0.15s all ease;
+}
+
+.header-item-link:hover {
+  color: #FF9900;
 }
 
 .header-item:not(:last-child) {
@@ -72,15 +84,17 @@ color: #2F281E
 .sign-in {
   border: 1px solid #BCD0E5;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
   color: #173A56;
+  transition: 0.3s all ease;
 }
 
-.sign-in-link {
-  color: #173A56;
-}
-
-.sign-up-link {
-  color: #FFFFFF;
+.sign-in:hover {
+  background-color: #BCD0E5;
 }
 
 .sign-up {
@@ -88,6 +102,17 @@ color: #2F281E
   background-color: #FF9900;
   color: #fff;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.3s all ease;
+}
+
+.sign-up:hover {
+  box-shadow: rgba(255, 153, 0, 0.19) 0px 10px 20px, rgba(255, 153, 0, 0.23) 0px 6px 6px;
 }
 
 .sign-in,
@@ -98,7 +123,6 @@ color: #2F281E
 
 .hero-container {
   display: flex;
-  height: 100vh;
   align-items: center;
   margin-top: 30px;
 }
@@ -117,10 +141,18 @@ color: #2F281E
 
 .hero-heading {
   margin-bottom: 30px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0px;
 }
 
 .hero-description {
   margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
 }
 
 .get-started-btn,
@@ -134,6 +166,11 @@ color: #2F281E
 .get-started-btn {
   border: 1px solid #FF9900;
   background-color: #FF9900;
+  transition: 0.3s all ease;
+}
+
+.get-started-btn:hover {
+  box-shadow: rgba(255, 153, 0, 0.19) 0px 10px 20px, rgba(255, 153, 0, 0.23) 0px 6px 6px;
 }
 
 .get-started-link {
@@ -177,9 +214,12 @@ color: #2F281E
 }
 
 .services-heading {
-  margin: 0 auto;
+  margin: auto;
+  width: 450px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 46px;
   text-align: center;
-  width: 300px;
 }
 
 .services-img {
@@ -196,18 +236,71 @@ color: #2F281E
   max-width: 300px;
 }
 
+.services-item-heading {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.services-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 .services-btn {
   margin: 0 auto;
   padding: 15px 30px;
+  border: 1px solid #FF7549;
+  border-radius: 4px;
+  background: #FF7549;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: 0.2s all ease;
+}
+
+.services-btn:hover {
+  box-shadow: rgba(255, 0, 0, 0.19) 0px 10px 20px, rgba(255, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.sign-up-now {
+  color: #fff;
+}
+
+.strat-heading {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.strat-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .strat_radio_btn {
 	display: inline-block;
 	margin-right: 10px;
 }
+
 .strat_radio_btn input[type=radio] {
 	display: none;
 }
+
 .strat_radio_btn label {
 	display: inline-block;
 	cursor: pointer;
@@ -246,6 +339,16 @@ color: #2F281E
 .strat-item {
   width: 366px;
   height: 377px;
+  border-radius: 8px;
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.05));
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.strat-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: #FF9900;
 }
 
 .strat-item:not(:nth-child(3)) {
@@ -266,6 +369,40 @@ color: #2F281E
 .strat-item:nth-child(8) {
   margin-right: 0px;
   margin-bottom: 0px;
+}
+
+.strat-item-img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.strat-item-heading {
+  margin: 24px 0px 0px 33px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  transition: 0.3s all ease-in-out;
+}
+
+.strat-item-tag,
+.strat-item-tag1 {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #544837;
+  background: #F5F5F5;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.strat-item-tag1 {
+  margin-left: 30px;
 }
 
 .clients {
@@ -303,7 +440,6 @@ color: #2F281E
   background-color: #FFEEE1;
   margin-bottom: 60px;
 }
-
 
 .contact-container {
   background-color: #FFEEE1;
